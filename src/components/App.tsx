@@ -50,7 +50,7 @@ const App: React.FC = () => {
                   deleteditem={(id: string | number) => {
                     const d = dataD.find(item => item.id === id);
                     if (d)
-                      alert('Удалён чип: ' + d.title + ' из комбобокса под индексом: ' + item);
+                      console.log('Удалён чип: ' + d.title + ' из комбобокса под индексом: ' + item);
                   }}
                 />
               </div>
