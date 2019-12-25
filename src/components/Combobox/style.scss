@@ -1,0 +1,101 @@
+.combobox {
+  position: relative;
+  border: 1px solid gray;
+  border-radius: 4px;
+  display: flex;
+  padding-top: 3px;
+  flex-wrap: wrap;
+  padding-right: 30px;
+
+  .list-items {
+    position: absolute;
+    top: 105%;
+    left: 0;
+    right: 0;
+    border-radius: 4px;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.4);
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 150px;
+    z-index: 1;
+
+    button {
+      background: white;
+      border: none;
+      display: block;
+      width: 100%;
+      padding: 10px;
+
+      &:nth-child(n+2) {
+        border-top: 1px solid rgba(0,0,0,0.2);
+      }
+
+      &:hover {
+        background-color: rgba(0,0,0,0.1);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .drop-down-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
+    background: transparent;
+    width: 30px;
+    font-size: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0000000f;
+    }
+  }
+
+  .chip-input {
+    border: none;
+    background: transparent;
+    flex: 1;
+    min-width: 50px;
+    min-height: 28px;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+
+  .chip {
+    position: relative;
+    font-size: 1em;
+    line-height: 1em;
+    color: #55677d;
+    cursor: default;
+    background: #dae2e8;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-width: 0;
+    margin: 0 3px 3px 3px;
+    border-radius: 2px;
+    padding: 4px 25px 5px 7px;
+
+    .delete-chips-button {
+      background: transparent;
+      border: none;
+      color: #55677d;
+      position: absolute;
+      height: 16px;
+      font-size: 14px;
+      right: 5px;
+      margin-top: -9px;
+      top: 50%;
+      cursor: pointer;
+
+      &:hover {
+        color: #3a9eaf;
+      }
+    }
+  }
+}

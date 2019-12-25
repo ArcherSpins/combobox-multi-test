@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.combobox-list {
+  padding: 100px;
+  flex-wrap: wrap;
+
+  .delete-combobox {
+    padding: 5px;
+    margin-left: 10px;
+  }
+
+  .item {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .combobox-item_container {
+    display: inline-block;
+    max-width: 300px;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.padding-10 {
+  padding: 10px;
+}
